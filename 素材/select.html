@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>显示JSON数据</title>
+  </head>
+
+  <body>
+    <div id="json-container"></div>
+
+    <!-- 引入 Axios 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+      // 向后端发送 GET 请求
+      axios
+        .get("https://6210b6be.r8.cpolar.cn/scene/select")
+        .then((response) => {
+          const jsonData = response.data;
+
+          // 将JSON数据显示在页面上
+          document.getElementById("json-container").innerText = JSON.stringify(
+            jsonData,
+            null,
+            2
+          );
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>

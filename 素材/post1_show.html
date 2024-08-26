@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>POST请求示例</title>
+  </head>
+  <body>
+    <h1>点击按钮发送 POST 请求</h1>
+    <button onclick="sendPostRequest()">发送请求</button>
+    <div id="responseContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      function sendPostRequest() {
+        const postData = {
+          scene: 0,
+          car: 0,
+          station: "*",
+          func: "1 3",
+        };
+
+        axios
+          .post("http://10.131.136.98:7005/api/get", postData)
+          .then((response) => {
+            document.getElementById("responseContainer").innerText =
+              JSON.stringify(response.data);
+          })
+          .catch((error) => {
+            document.getElementById("responseContainer").innerText =
+              "Error: " + error.message;
+          });
+      }
+    </script>
+  </body>
+</html>
