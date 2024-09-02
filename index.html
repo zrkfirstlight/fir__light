@@ -80,23 +80,35 @@
             line-height: 1.7;
           "
         >
-          <p>给岁月以文明，而不是给文明以岁月。</p>
-          <p>有趣的东西</p>
-          <p><a href="daily.html">记录日常</a></p>
-          <p>给岁月以文明，而不是给文明以岁月。</p>
-          <p>有趣的东西</p>
-          <p><a href="daily.html">记录日常</a></p>
-          <p>给岁月以文明，而不是给文明以岁月。</p>
-          <p>有趣的东西</p>
-          <p><a href="daily.html">记录日常</a></p>
-          <p>给岁月以文明，而不是给文明以岁月。</p>
-          <p>有趣的东西</p>
-          <p><a href="daily.html">记录日常</a></p>
-          <p>给岁月以文明，而不是给文明以岁月。</p>
-          <p>有趣的东西</p>
-          <p><a href="daily.html">记录日常</a></p>
+          <p style="text-indent: 2em">
+            你好啊，我是zrk，是本网站的制作者与维护者。
+          </p>
+          <p style="text-indent: 2em">
+            过去我制作了一些有趣的东西，或者学到了一些实用的技巧，但是苦于分享与记录，
+            后来我学会了github的简单使用，但是他太过于专业，而且我也想随时随地的使用我做的工具，
+            于是我制作了这个网站，一是用于提升我的js编程能力，二是分享和记录我的成长与收获。
+          </p>
+          <p style="text-indent: 2em">
+            分享栏目，
+            记录了我觉得很好用的网站工具，还有一些写代码的时候的趣事。
+          </p>
+          <p style="text-indent: 2em">
+            学习栏目，我计划简单记录我以后学习的过程，当然现在还没有（过去的不太想补充了，有空就写）。
+          </p>
+          <p style="text-indent: 2em">
+            兴趣栏目，用于记录我认为很好玩的项目，比如我利用pygame制作的几十个小游戏，自己写的爬虫工具。
+          </p>
+          <p style="text-indent: 2em">
+            项目栏目，用于记录我参与的项目，软硬件都有，只分享可以公开的信息和我的感悟。
+          </p>
+          <p style="text-indent: 2em">帮助页面，记录本网页的制作技术。</p>
         </div>
       </div>
+    </div>
+    <!-- 实时更新网站运行时间 -->
+    <div style="flex-direction: row; display: flex">
+      <p>网站运行时间：</p>
+      <p id="website-runtime"></p>
     </div>
     <!-- 网页页尾 -->
     <div class="footer">
@@ -319,5 +331,26 @@
         },
       },
     });
+  </script>
+  <script>
+    // 计算网站运行时间
+    const startDate = new Date("2024-08-27"); // 设置网站启动日期
+    const runtimeElement = document.getElementById("website-runtime");
+
+    setInterval(() => {
+      const currentTime = new Date();
+      const elapsedTime = currentTime - startDate;
+
+      const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor(
+        (elapsedTime % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+      runtimeElement.textContent = `${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+    }, 1000); // 每秒更新一次
   </script>
 </html>
