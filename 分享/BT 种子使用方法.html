@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zrk个人网页 网页收藏</title>
+    <title>zrk个人网页 AI网页分享</title>
   </head>
   <body>
     <!-- 背景特效，由于处于最低图层，所以先绘制，方便后续覆盖 -->
@@ -57,7 +57,7 @@
     </div>
     <!-- 界面的主体内容 -->
     <div class="container">
-      <div style="background-color: #f1f1f1;padding-bottom: 40px">
+      <div style="background-color: #f1f1f1; padding-bottom: 40px">
         <div
           style="background-color: #f1f1f1; text-align: center; padding: 40px"
         >
@@ -70,6 +70,7 @@
           <p style="background-color: #f4f4f4; text-align: center"></p>
           <hr color="blue" width="80%px" size="5px" />
         </div>
+
         <div
           style="
             max-width: 700px;
@@ -79,114 +80,21 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           "
         >
-         <div style="text-align: center;">
-            <p>视频网页链接及介绍</p>
-        </div>
-        <div class="image-container">
-            <div class="image">
-        <img 
-              src=""
-              alt="bilibili"
-              width="30px"
-              height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://www.bilibili.com/"
-              >bilibili</a
-            >|免费的大会员，学习圣地</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <div class="image">
-            <img 
-                src=""
-                alt="樱花动漫"
-                width="30px"
-                height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://www.aidm3.com/"
-              >樱花动漫</a
-            >|看动漫的网站</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <div class="image">
-            <img 
-                src=""
-                alt="不太灵"
-                width="30px"
-                height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://www.2bt0.com/"
-              >不太灵网站</a
-            >|使用BT种子下载视频，<a href="BT 种子使用方法.html">BT种子使用方法</a></p>
-            </div>
-        </div>
-
-        </div>
-        <div
-          style="
-            max-width: 700px;
-            margin: 30px auto;
-            padding: 30px;
-            line-height: 1.7;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          "
-        >
-         <div style="text-align: center;">
-            <p>工具网页链接及介绍</p>
-        </div>
-        <div class="image-container">
-            <div class="image">
-        <img 
-              src=""
-              alt="bilibili"
-              width="30px"
-              height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://www.bilibili.com/"
-              >bilibili</a
-            >|抠图网站</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <div class="image">
-            <img 
-                src=""
-                alt="樱花动漫"
-                width="30px"
-                height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://www.aidm3.com/"
-              >樱花动漫</a
-            >|看动漫的网站</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <div class="image">
-            <img 
-                src=""
-                alt="不太灵"
-                width="30px"
-                height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://www.2bt0.com/"
-              >不太灵网站</a
-            >|使用BT种子下载视频，<a href="BT 种子使用方法.html">BT种子使用方法</a></p>
-            </div>
-        </div>
-
+          <div>
+            <p>
+              步骤：<br />
+              1. 选择自己喜欢的资源<br />
+              2. 获取bt种子<br />
+              3. 进入bt种子解析器<br />
+              4. 下载文件观看
+            </p>
+            <p>
+              举例：<br />
+              找到网页，进入影视作品，选择视频参数，下载种子，<br />
+              打开百度网盘，上传种子，点击文件管理中的bt种子，点击文件，<br />
+              根据需要进行云保存或者保存到本地
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -258,6 +166,11 @@
     /* 下方为导航栏内元素 */
     /* 链接 */
     .navbar a {
+      /* float: left; */
+      /* display: block; */
+      /* display: flex; 将容器设置为弹性布局 */
+      /* justify-content: flex-start; 元素向左对齐 */
+      /* align-items: center; 垂直居中对齐 */
       padding: 10px;
       color: white;
       text-align: center;
@@ -407,27 +320,39 @@
       },
     });
   </script>
+  <!-- 内容， 文本框 -->
   <style>
     .image-container {
-        display: flex;
-        padding-top: 15px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        margin: 10px;
+      display: flex;
+      /* align-items: center; */
+      /* justify-content: space-between; */
+      padding-top: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 10px;
     }
 
     .image {
-        margin-left: 10px;
-        margin-right: 10px;
+      /* flex-shrink: 0; */
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
+    /* .image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    } */
+
     .image-description {
-        text-align: left;
+      /* flex-grow: 1; */
+      text-align: left;
     }
 
     .image-description p {
-        background-color: #f4f4f4;
-        color: black;
+      background-color: #f4f4f4;
+      color: black;
     }
     .image-description a {
       color: blue;
@@ -437,5 +362,5 @@
     .image-description a:hover {
       color: red;
     }
-</style>
+  </style>
 </html>
