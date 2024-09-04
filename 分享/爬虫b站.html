@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zrk个人网页 博客文章分享</title>
+    <title>zrk个人网页 BT种子使用方法分享</title>
+    <link rel="stylesheet" href="../js/prism.css" />
   </head>
   <body>
     <!-- 背景特效，由于处于最低图层，所以先绘制，方便后续覆盖 -->
@@ -57,7 +58,7 @@
     </div>
     <!-- 界面的主体内容 -->
     <div class="container">
-      <div style="background-color: #f1f1f1;padding-bottom: 40px">
+      <div style="background-color: #f1f1f1; padding-bottom: 40px">
         <div
           style="background-color: #f1f1f1; text-align: center; padding: 40px"
         >
@@ -70,9 +71,7 @@
           <p style="background-color: #f4f4f4; text-align: center"></p>
           <hr color="blue" width="80%px" size="5px" />
         </div>
-        <div style="text-align: center;">
-            <p>下面列出博客链接，后续将博客集成到本网站</p>
-        </div>
+
         <div
           style="
             max-width: 700px;
@@ -82,38 +81,128 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           "
         >
-        <div class="image-container">
-            <div class="image">
-        <img 
-              src="..\素材\keqing.jpeg"
-              alt="OhMYGPT logo"
-              width="30px"
-              height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://blog.csdn.net/m0_73666951/article/details/135779470?spm=1001.2014.3001.5502"
-              >中文不对齐</a
-            >|python print中文不对齐问题（特殊字符、混合字符不对齐问题）的解决</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <div class="image">
-            <img 
-                src="..\素材\keqing.jpeg"
-                alt="kaline logo"
-                width="30px"
-                height="30px">
-            </div>
-            <div class="image-description">
-                <a
-              href="https://blog.csdn.net/m0_73666951/article/details/134432006?spm=1001.2014.3001.5502"
-              >词云制作</a
-            >|python利用wordcloud库来绘制有特殊轮廓的词云(解决图片轮廓提取失败的一种方案)</p>
-            </div>
-        </div>
-        </div>
+          <div class="code-box">
+            <pre>
+                <code class="language-javascript">
+# 导入requests和BeautifulSoup库，用于发送HTTP请求和解析HTML内容。
+import requests
+from bs4 import BeautifulSoup
 
+# 定义了一个User-Agent，以模拟正常的用户请求。
+headers = {
+    "User-Agent": "自己给"}
+# 使用requests库发送GET请求到指定URL
+response = requests.get(f"想要的论文的网址", headers=headers)
+# 打印HTTP响应状态码，检查请求是否成功。
+print(response.status_code)
+# 将获取到的网页内容以字符串形式存储在变量html中。
+html = response.text
+# print(html)
+# 使用BeautifulSoup库将网页内容解析为一个可遍历的对象。
+soup = BeautifulSoup(html, "html.parser")
+# 观察网页结构，找到容器标签，将其信息全部提取并打印
+image_urls = []
+all_div = soup.findAll("div", attrs={"style": "padding: 0 4px;"})
+for div in all_div:
+    images = div.find_all('img')
+    for image in images:
+        print(f"src={image.get('src')}, alt={image.get('alt')}")
+        image_urls.append(image.get('src'))
+
+##
+# todo: 设定文件保存名字，
+all_file_name = "自己喜欢的名字"
+
+##
+# todo: 单纯保存图片
+
+image_num = 0
+for image_url in image_urls:
+    # 发送HTTP请求获取图片数据
+    response = requests.get(image_url)
+    image_num += 1
+    try:
+        if response.status_code == 200:
+            # 提取文件名
+            filename = f"图片合集/论文图片{image_num}.png"
+            # 保存图片到本地
+            with open(filename, 'wb') as file:
+                file.write(response.content)
+            print(f"图片已成功下载到 {filename}")
+        else:
+            print("无法下载图片，错误状态码:", response.status_code)
+    except:
+        print("当前目录下没有文件夹 图片合集 ，无法保存图片")
+
+##
+# todo:下载图片并保存成PDF形式
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+
+# 创建PDF文档
+pdf_filename = f"{all_file_name}.pdf"
+c = canvas.Canvas(pdf_filename, pagesize=letter)
+
+# 设置页面尺寸
+width, height = letter
+
+# 逐个遍历图片URL，并绘制到PDF中不同页
+for image_url in image_urls:
+    c.drawImage(image_url, 0, 0, width, height)  # 将图片绘制到整个页面
+    c.showPage()
+
+# 关闭PDF文档
+c.save()
+
+print(f"图片已成功保存为 {pdf_filename}")
+##
+# # todo: pdf转word
+# #  这段代码不稳定，崩了就崩了吧，先不去用它
+# print("注意！！！以下如报错，很正常！！！")
+#
+# import fitz
+# from docx import Document
+# from docx.shared import Inches
+#
+# # 打开PDF文件
+# pdf_file = f"{all_file_name}.pdf"
+# doc = fitz.open(pdf_file)
+#
+# # 创建一个空白Word文档
+# docx_file = f"{all_file_name}.docx"
+# docx = Document()
+#
+# for page_num in range(doc.page_count):
+#     # 获取每一页的文本
+#     page = doc[page_num]
+#     text = page.get_text("text")
+#     image_list = page.get_images(full=True)
+#     # 将文本写入Word文档
+#     docx.add_paragraph(text)
+#
+#     for img_idx, img_info in enumerate(image_list):
+#         img = page.get_pixmap(alpha=False)
+#
+#         # 保存图像为PNG文件
+#         image_filename = f"image_page{page_num}_img{img_idx}.png"
+#         img.save(image_filename)
+#
+#         # 将图像插入到Word文档
+#         docx.add_picture(image_filename, width=Inches(4))  # 设置插入图像的宽度
+#
+#
+# # 保存Word文档
+# docx.save(docx_file)
+#
+# print(f"PDF 已成功转换为 Word 文档: {docx_file}")
+
+
+
+                </code>
+            </pre>
+
+            <button onclick="copyCode()">Copy</button>
+          </div>
         </div>
       </div>
     </div>
@@ -339,22 +428,42 @@
       },
     });
   </script>
+  <script src="../js/prism.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      Prism.highlightAll();
+    });
+  </script>
+  <script>
+    function copyCode() {
+      const code = document.querySelector("code");
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(code);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      document.execCommand("copy");
+      selection.removeAllRanges();
+      alert("Code copied to clipboard!");
+    }
+  </script>
+
   <!-- 内容， 文本框 -->
   <style>
     .image-container {
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: space-between; */
-        padding-top: 15px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        margin: 10px;
+      display: flex;
+      /* align-items: center; */
+      /* justify-content: space-between; */
+      padding-top: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 10px;
     }
 
     .image {
-        /* flex-shrink: 0; */
-        margin-left: 10px;
-        margin-right: 10px;
+      /* flex-shrink: 0; */
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     /* .image img {
@@ -365,13 +474,13 @@
     } */
 
     .image-description {
-        /* flex-grow: 1; */
-        text-align: left;
+      /* flex-grow: 1; */
+      text-align: left;
     }
 
     .image-description p {
-        background-color: #f4f4f4;
-        color: black;
+      background-color: #f4f4f4;
+      color: black;
     }
     .image-description a {
       color: blue;
@@ -381,5 +490,25 @@
     .image-description a:hover {
       color: red;
     }
-</style>
+  </style>
+  <style>
+    .code-box {
+      position: relative;
+      border: 1px solid #ccc;
+      background-color: #f8f9fa;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-family: monospace;
+    }
+    .code-box button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 </html>
