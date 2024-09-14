@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>搜索结果显示示例</title>
+    <style>
+      .result-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #2ecc71; /* 设置头像的背景颜色为绿色 */
+      }
+
+      .content-box {
+        flex: 1;
+        margin-left: 10px;
+        padding: 10px;
+        background: #f9f9f9; /* 设置内容显示框的背景颜色 */
+        border: 1px solid #ccc;
+      }
+
+      .content-actions {
+        margin-top: 5px;
+      }
+
+      button {
+        padding: 5px 10px;
+        background: #9370db;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="result-container">
+      <div class="avatar"></div>
+      <div class="content-box">
+        <p>这里是搜索内容的显示区域</p>
+        <div class="content-actions">
+          <button>操作按钮1</button>
+          <button>操作按钮2</button>
+          <button>操作按钮3</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

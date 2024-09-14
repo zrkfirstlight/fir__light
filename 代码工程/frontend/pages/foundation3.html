@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>左右内容框布局</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+      }
+
+      .left-panel,
+      .right-panel {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .left-panel {
+        border-right: 2px solid #ccc; /* 左右内容框之间的分割线 */
+        display: block; /* 初始显示左侧内容框 */
+      }
+
+      .divider {
+        cursor: col-resize;
+        background-color: #f0f0f0;
+        width: 10px;
+      }
+
+      #toggleButton {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="toggleButton">切换左侧内容</div>
+
+    <main>
+      <div class="left-panel">
+        <!-- 左侧内容 -->
+        <h2>左侧内容框</h2>
+        <p>这是左侧内容框的内容</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="right-panel">
+        <!-- 右侧内容 -->
+        <h2>右侧内容框</h2>
+        <p>这是右侧内容框的内容</p>
+      </div>
+    </main>
+
+    <footer>
+      <!-- 尾页内容 -->
+      <h2>尾页</h2>
+      <p>这是尾页的内容</p>
+    </footer>
+
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const leftPanel = document.querySelector(".left-panel");
+      const rightPanel = document.querySelector(".right-panel");
+      let isDragging = false;
+
+      toggleButton.addEventListener("click", function () {
+        leftPanel.style.display =
+          leftPanel.style.display === "none" ? "block" : "none";
+      });
+
+      document
+        .querySelector(".divider")
+        .addEventListener("mousedown", function () {
+          isDragging = true;
+        });
+
+      document.addEventListener("mousemove", function (e) {
+        if (isDragging) {
+          const leftPanelWidth =
+            e.clientX - leftPanel.getBoundingClientRect().left;
+          leftPanel.style.width = leftPanelWidth + "px";
+        }
+      });
+
+      document.addEventListener("mouseup", function () {
+        isDragging = false;
+      });
+    </script>
+  </body>
+</html>

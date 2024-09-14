@@ -1,0 +1,350 @@
+/* styles.css */
+
+/* 主体 */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 防止粒子效果溢出 */
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+}
+
+/*背景效果*/
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+}
+
+/* 隐藏功能 */
+.nav1 {
+  width: 100%;
+  background: linear-gradient(to bottom, #9370db, #f0f0f0); /* 渐进紫色背景 */
+  color: #ffffff; /* 文字颜色为白色 */
+  position: fixed;
+  top: 0; /* 固定在顶部 */
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.nav2 {
+  width: 100%;
+  background: linear-gradient(to bottom, #9370db, #f0f0f0); /* 渐进紫色背景 */
+  position: fixed;
+  bottom: 0; /* 固定在底部 */
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.nav1:hover {
+  opacity: 1;
+}
+.nav2:hover {
+  opacity: 1;
+}
+
+/* 导航栏内容 */
+.header {
+  background: linear-gradient(to right, #6fa4ff, #d5a4ff);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+  margin: 0px;
+  text-align: center;
+}
+.header p {
+  margin: 0px 20px;
+}
+
+.header li {
+  margin: 0px 20px;
+}
+
+.header li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.header li a:hover {
+  color: red;
+  background-color: #9370db;
+}
+
+/* 页尾栏 */
+.footer {
+  /* background: linear-gradient(to right, #d5a4ff, #6fa4ff); */
+  background-color: #9370db;
+  list-style-type: none;
+  /* display: flex; */
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+  margin: 0px;
+  text-align: center;
+}
+.footer li {
+  margin: 0px 20px;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.footer li a:hover {
+  color: red;
+  background-color: #9370db;
+}
+.c {
+  list-style-type: none;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  padding: 50px, 50px;
+  margin: 50px, 50px;
+}
+.c li {
+  margin: 0px 20px;
+}
+
+.c a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.c a:hover {
+  color: red;
+  background-color: #9370db;
+}
+
+/* 主体 */
+.container {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 75%;
+  top: 6%;
+  /* width: 100%;
+  height: 80%; */
+  margin: 0 auto; /* 居中容器 */
+  padding: 2% 0; /* 设置内边距 */
+  /* overflow: auto; */
+  background: transparent;
+  /* background: #f0f0f0; */
+  opacity: 1;
+  /* 设置容器背景为透明 */
+  z-index: 1; /* 将容器置于背景之上 */
+  position: absolute;
+}
+
+/* 加载动画 */
+/* <!-- <div id="loading">
+      <h1>👏👏👏Welcome To Our Website</h1>
+      <div style="margin: 20px auto" class="loader"></div>
+    </div> --> */
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -10;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+#loading > h1 {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.1;
+  color: #213547;
+  display: block;
+}
+#loading > h2 {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1;
+  color: #213547;
+  display: block;
+}
+.loader {
+  border: 6px solid #e4f2fb;
+  border-radius: 50%;
+  border-top: 6px solid #6bbcb6;
+  width: 24px;
+  height: 24px; /* Safari */
+  z-index: 100;
+  animation: spin 0.4s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* DarkMode */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+
+  #loading > h1 {
+    color: #d0d0d0;
+  }
+
+  .loader {
+    border: 6px solid #5d5d5d;
+    border-top: 6px solid #6bbcb6;
+  }
+} */
+
+/* 搜索 */
+.search-container {
+  position: absolute;
+  bottom: 10px;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-button {
+  background: #9370db;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* 搜索结果框 */
+.search-results {
+  position: absolute;
+  overflow: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 75%;
+  margin: 0 auto;
+  padding: 2%, 0;
+}
+
+/* 每个结果单独有一个结果框 */
+.result-container {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.avatar-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+}
+.avatar-user img {
+  display: block; /* 让图片以块级元素显示，便于居中 */
+  /* margin: auto; 使用margin:auto; 将图片水平居中 */
+}
+.avatar-system {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(116, 240, 120);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-system img {
+  display: block; /* 让图片以块级元素显示，便于居中 */
+  /* margin: auto; 使用margin:auto; 将图片水平居中 */
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar img {
+  display: block; /* 让图片以块级元素显示，便于居中 */
+  /* margin: auto; 使用margin:auto; 将图片水平居中 */
+}
+.content-box {
+  flex: 1;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f9f9f9; /* 设置内容显示框的背景颜色 */
+  border: 1px solid #ccc;
+}
+
+.content-actions {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end; /* 将内容操作按钮向右靠齐 */
+  align-items: center;
+}
+
+.content-actions button {
+  padding: 5px 10px;
+  background: #9370db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.line {
+  margin-top: 10px;
+  border-top: 1px solid #ccc; /* 添加一条细线进行区分 */
+}
