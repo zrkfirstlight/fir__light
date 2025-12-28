@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on 熹光的偷懒空间</title>
+    <link>http://localhost:1313/page/</link>
+    <description>Recent content in Pages on 熹光的偷懒空间</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>2240168559@qq.com (firlight)</managingEditor>
+    <webMaster>2240168559@qq.com (firlight)</webMaster>
+    <lastBuildDate>Mon, 20 May 2024 15:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>http://localhost:1313/page/about/</link>
+      <pubDate>Mon, 20 May 2024 15:30:00 +0800</pubDate><author>2240168559@qq.com (firlight)</author>
+      <guid>http://localhost:1313/page/about/</guid>
+      <description>&lt;p&gt;My name is firlight. I have the following qualities:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I rock a great mustache&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;m extremely loyal to my family&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;What else do you need?&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-history&#34;&gt;my history&lt;/h3&gt;&#xA;&lt;p&gt;To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29&#34;&gt;my movie&lt;/a&gt; and it will answer &lt;strong&gt;all&lt;/strong&gt; your questions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Explain</title>
+      <link>http://localhost:1313/page/explain/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate><author>2240168559@qq.com (firlight)</author>
+      <guid>http://localhost:1313/page/explain/</guid>
+      <description>&lt;p&gt;If you see this words, it isn&amp;rsquo;t your fault.I wanna write these content, but haven&amp;rsquo;t finish it now.Please wait for an update.&lt;/p&gt;&#xA;&lt;p&gt;Thank you.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

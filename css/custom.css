@@ -1,0 +1,40 @@
+/* 1. 控制轮播大图的整体容器 */
+.intro-header .big-img {
+  height: 500px; /* 修改大图高度（默认可能是 400px） */
+  background-size: cover; /* 图片缩放方式：cover（铺满）/ contain（完整显示）/ 100% 100%（拉伸） */
+  background-repeat: no-repeat;
+  background-position: center center; /* 图片定位：可改 left top / right bottom 等 */
+  position: relative; /* 用于定位描述文字 */
+}
+
+/* 2. 控制轮播大图的描述文字样式 */
+.intro-header .big-img .img-desc {
+  position: absolute;
+  bottom: 20px; /* 文字距离底部的距离 */
+  right: 20px; /* 文字距离右侧的距离 */
+  color: #fff; /* 文字颜色 */
+  font-size: 18px; /* 文字大小 */
+  background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 8px 15px; /* 内边距 */
+  border-radius: 8px; /* 圆角 */
+}
+
+/* 3. 控制轮播切换的指示器（如果有） */
+.big-img-carousel .carousel-indicators li {
+  width: 15px; /* 指示器圆点大小 */
+  height: 15px;
+  border-radius: 50%; /* 圆形指示器 */
+  background-color: #fff; /* 未选中颜色 */
+}
+.big-img-carousel .carousel-indicators .active {
+  background-color: #428bca; /* 选中颜色 */
+}
+
+/* 4. 控制轮播切换按钮（左右箭头） */
+.big-img-carousel .carousel-control-prev-icon,
+.big-img-carousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3); /* 箭头背景 */
+  border-radius: 50%; /* 圆形箭头 */
+  width: 40px;
+  height: 40px;
+}
