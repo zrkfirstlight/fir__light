@@ -38,3 +38,15 @@
   width: 40px;
   height: 40px;
 }
+/* 隐藏文章末尾的社交分享链接（核心） */
+.share-box,
+.social-share,
+.post-share {
+  display: none !important; /* !important 强制覆盖主题默认样式 */
+  visibility: hidden !important; /* 双重保险，避免残留 */
+}
+
+/* 若仍有残留，补充以下样式（根据实际结构调整） */
+.post-footer .share-links {
+  display: none !important;
+}
