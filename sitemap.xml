@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://zrk123.cn/post/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://zrk123.cn/tags/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://zrk123.cn/tags/%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%A8%A1%E7%89%88/</loc>
+    <loc>https://zrk123.cn/tags/%E6%A8%A1%E7%89%88/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2025-12-29-public/</loc>
+    <loc>https://zrk123.cn/post/2025-12-29-public/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%AF%B4%E6%98%8E/</loc>
+    <loc>https://zrk123.cn/tags/%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2025-12-29-happy/</loc>
+    <loc>https://zrk123.cn/post/2025-12-29-happy/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://zrk123.cn/</loc>
     <lastmod>2025-12-28T22:36:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/about/</loc>
+    <loc>https://zrk123.cn/page/about/</loc>
     <lastmod>2024-05-20T15:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/</loc>
+    <loc>https://zrk123.cn/page/</loc>
     <lastmod>2024-05-20T15:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/explain/</loc>
+    <loc>https://zrk123.cn/page/explain/</loc>
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://zrk123.cn/categories/</loc>
   </url>
 </urlset>

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 熹光的偷懒空间</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://zrk123.cn/post/</link>
     <description>Recent content in Posts on 熹光的偷懒空间</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <managingEditor>2240168559@qq.com (firlight)</managingEditor>
     <webMaster>2240168559@qq.com (firlight)</webMaster>
     <lastBuildDate>Sun, 28 Dec 2025 22:36:03 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zrk123.cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>内容说明</title>
-      <link>http://localhost:1313/post/2025-12-29-public/</link>
+      <link>https://zrk123.cn/post/2025-12-29-public/</link>
       <pubDate>Sun, 28 Dec 2025 22:36:03 +0800</pubDate><author>2240168559@qq.com (firlight)</author>
-      <guid>http://localhost:1313/post/2025-12-29-public/</guid>
+      <guid>https://zrk123.cn/post/2025-12-29-public/</guid>
       <description>&lt;p&gt;在本网站上发布内容，仅需撰写 markdown 文件即可，不需要网站或编程知识。&lt;/p&gt;&#xA;&lt;h3 id=&#34;第一步指定文章的样式&#34;&gt;第一步，指定文章的样式&lt;/h3&gt;&#xA;&lt;p&gt;在你创建的 markdown 文件的开头，添加以下内容：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title = &amp;#39;你的标题&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;subtitle = &amp;#39;你的副标题&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;author = &amp;#39;你的名字&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date = &amp;#39;2025-12-28T22:36:03+08:00&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;type = &amp;#39;post&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;image= &amp;#39;&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tags = [&amp;#34;模版&amp;#34;, &amp;#34;说明&amp;#34;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;something = &amp;#39;&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;请在以+为首尾的内容段中编辑这篇博客的样式，样式格式为：XX = XX。 你可以自定义样式内容，包括样式名称和样式内容，如果我的代码可以支持的话，如果暂时不支持，请让你的格式保持：XX = &amp;lsquo;&amp;rsquo;。&lt;/p&gt;&#xA;&lt;p&gt;以下为样式说明：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;title：标题&lt;/li&gt;&#xA;&lt;li&gt;subtitle：副标题&lt;/li&gt;&#xA;&lt;li&gt;author ： 本文作者&lt;/li&gt;&#xA;&lt;li&gt;date ：本文发布的时间（北京时间）&lt;/li&gt;&#xA;&lt;li&gt;type ： 界面的渲染模版&lt;/li&gt;&#xA;&lt;li&gt;image： 文章封面&lt;/li&gt;&#xA;&lt;li&gt;tags ： 文章标签&lt;/li&gt;&#xA;&lt;li&gt;something ：自定义示例&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;第二步编写你的文章内容&#34;&gt;第二步，编写你的文章内容&lt;/h3&gt;&#xA;&lt;p&gt;很简单，只要是 markdown 的内容即可，如果你觉得 md 文件的默认渲染方式太丑，这里也支持自定义的渲染方式，如果我的代码可以支持的话。&lt;/p&gt;&#xA;&lt;p&gt;请保证你的内容在文章的样式后面，也就是在+的内容段后面开启你的全部内容。&lt;/p&gt;&#xA;&lt;h3 id=&#34;第三步内容发布&#34;&gt;第三步，内容发布&lt;/h3&gt;&#xA;&lt;p&gt;为了方便管理，请将文件名改为&amp;quot;日期-标题&amp;quot;，日期样式为 year-month-day，示例：2025-12-28。&lt;/p&gt;&#xA;&lt;p&gt;文件中需要用到的资源，如图片、资源文件等，请放到根目录 static 文件夹下。&lt;/p&gt;</description>
     </item>
     <item>
       <title>网站升级</title>
-      <link>http://localhost:1313/post/2025-12-29-happy/</link>
+      <link>https://zrk123.cn/post/2025-12-29-happy/</link>
       <pubDate>Sun, 28 Dec 2025 22:36:03 +0800</pubDate><author>2240168559@qq.com (firlight)</author>
-      <guid>http://localhost:1313/post/2025-12-29-happy/</guid>
+      <guid>https://zrk123.cn/post/2025-12-29-happy/</guid>
       <description>&lt;p&gt;我的个人网站进行了全面大更新，本次是 2.0 版本。本版本放弃了原生技术（因为实在是太麻烦了），选择了 hugo 框架中的 beautifulhugo 主题，当然会在原主题上进行更改，后续我会自己慢慢写样式，直到完全变成自己的主题为止。&lt;/p&gt;&#xA;&lt;p&gt;本次更新要感谢我的好友 hc，如果不是他督促我，我这次更新还不知道是什么时候呢。&lt;/p&gt;&#xA;&lt;p&gt;新的网站内容计划如下：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;随笔分享&lt;/li&gt;&#xA;&lt;li&gt;栏目撰写&lt;/li&gt;&#xA;&lt;li&gt;分享有用的网站、工具、资源&lt;/li&gt;&#xA;&lt;li&gt;可以帮助大家发布自己的内容&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;期待它能成为我和你们的回忆，感谢！&lt;/p&gt;</description>
     </item>
   </channel>
