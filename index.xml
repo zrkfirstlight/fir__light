@@ -25,18 +25,18 @@
       <description>&lt;p&gt;我的个人网站进行了全面大更新，本次是 2.0 版本。本版本放弃了原生技术（因为实在是太麻烦了），选择了 hugo 框架中的 beautifulhugo 主题，当然会在原主题上进行更改，后续我会自己慢慢写样式，直到完全变成自己的主题为止。&lt;/p&gt;&#xA;&lt;p&gt;本次更新要感谢我的好友 hc，如果不是他督促我，我这次更新还不知道是什么时候呢。&lt;/p&gt;&#xA;&lt;p&gt;新的网站内容计划如下：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;随笔分享&lt;/li&gt;&#xA;&lt;li&gt;栏目撰写&lt;/li&gt;&#xA;&lt;li&gt;分享有用的网站、工具、资源&lt;/li&gt;&#xA;&lt;li&gt;可以帮助大家发布自己的内容&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;期待它能成为我和你们的回忆，感谢！&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About me</title>
+      <title>关于我</title>
       <link>http://localhost:1313/page/about/</link>
       <pubDate>Mon, 20 May 2024 15:30:00 +0800</pubDate><author>2240168559@qq.com (firlight)</author>
       <guid>http://localhost:1313/page/about/</guid>
-      <description>&lt;p&gt;My name is firlight. ok, that is all.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;关于我&#34;&gt;关于我&lt;/h3&gt;&#xA;&lt;p&gt;我是一个编程菜鸡，没有天赋、没有经历、没有视野。在这大佬云集的世上，只想偷懒玩耍，然后安详地度过一生。&lt;/p&gt;&#xA;&lt;p&gt;我是喜欢胡思乱想的，了解我的人都知道，我有很多很多的想法，奈何行动力不行，最终做成的没有多少。&lt;/p&gt;&#xA;&lt;p&gt;我的个人网站在 2024 年的时候就上线了，当时是采用的原生技术，然后..然后整个人就颓废了， 荒废了将近一年的时间（我自己觉得）。然后好朋友想在我的网站上发布点东西，我就教他。奈何原生技术缺点太多，然后就找了这个 Hugo 框架，其实这一版的代码早半年前就写好了，现在有人催我才部署到服务器上来。&lt;/p&gt;&#xA;&lt;p&gt;我的大学时光太美好了，课业压力小，老师同学关系好，奖项荣誉有一些，运气好保研了，遇到合适的导师，日子一天天的过去，只是留下了摸不到的回忆，最初建站也是想要留下回忆，现在看看，貌似都留在我的日记本上了。&lt;/p&gt;&#xA;&lt;p&gt;我之前在 csdn 上写博客，阅读量只是过万，然后 csdn 想要强制将我的文章变成 vip 文章，气到我了，于是就自己建站了&lt;/p&gt;&#xA;&lt;p&gt;这篇文章莫名奇妙，是的，偷偷懒，还指望我写点什么东西呢~~~&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Explain</title>
+      <title>万分抱歉</title>
       <link>http://localhost:1313/page/explain/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate><author>2240168559@qq.com (firlight)</author>
       <guid>http://localhost:1313/page/explain/</guid>
-      <description>&lt;p&gt;If you see this words, it isn&amp;rsquo;t your fault.I wanna write these content, but haven&amp;rsquo;t finish it now.Please wait for an update.&lt;/p&gt;&#xA;&lt;p&gt;Thank you.&lt;/p&gt;</description>
+      <description>&lt;p&gt;如果你看到这段话，不是你的设备出现问题。是我想写的内容还没有完成，请等待更新。感谢！&lt;/p&gt;&#xA;&lt;p&gt;If you see this words, it isn&amp;rsquo;t your fault.I wanna write these content, but haven&amp;rsquo;t finish it now.Please wait for an update.&lt;/p&gt;&#xA;&lt;p&gt;Thank you.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

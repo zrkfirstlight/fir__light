@@ -50,3 +50,9 @@
 .post-footer .share-links {
   display: none !important;
 }
+
+/* 覆盖网站名的样式 */
+a[href="/"] {
+  color: rgb(220, 245, 228); /* 红色网站名 */
+  font-size: 18px;
+}
